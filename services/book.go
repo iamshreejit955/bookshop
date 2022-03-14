@@ -9,9 +9,9 @@ import (
 
 func FetchAll() []byte {
 	books := []models.Book{
-		models.Book{Title: "Goosebumps"},
-		models.Book{Title: "Harry potter"},
-		models.Book{Title: "Shreejit the great"},
+		{Title: "Goosebumps"},
+		{Title: "Harry potter"},
+		{Title: "Shreejit the great"},
 	}
 
 	jsonBooks, err := json.Marshal(books)
